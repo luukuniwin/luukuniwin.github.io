@@ -144,7 +144,7 @@ footer,#contact {
 
 .project-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     max-width: 70%;
 }
@@ -153,8 +153,8 @@ footer,#contact {
     padding: 0px;
 }
 
-img {
-    width: 180px;
+.project-wrapper img {
+    width: 600px;
 }
 
 .container {
@@ -182,18 +182,41 @@ div>.btn {
     margin: 5px 3px;
     color: white;
     padding: 8px 14px;
-    background-color: #333; 
     color: #fff; 
     border-radius: 5px; 
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
+    cursor:default;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-div>.btn:hover {
-    background-color: #5a5a5a;
+.php {
+    background: #4D588E;
+}
+
+.sql {
+    background-color: #f59453;
+}
+
+.html {
+    background-color: #e95d22;
+}
+
+.css {
+    background-color: #2079B6;
+}
+
+.js {
+    background-color: #dabe0b;
+}
+
+.ps {
+    background-color: #003f72;
+}
+
+.sv {
+    background-color: #10acf5;
 }
 
 /************/
@@ -207,7 +230,7 @@ div>.btn:hover {
 }
 
 #over-mij-container img {
-    max-width: 100%;
+    max-width: 20%;
     height: auto;
     margin-right: 10px; 
 }

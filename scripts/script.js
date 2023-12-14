@@ -29,3 +29,17 @@ tabs.forEach(clickedTab => {
         clickedTab.classList.add('active');
     });
 });
+
+
+// Parse the URL to get the value of the 'status' parameter
+const urlParams = new URLSearchParams(window.location.search);
+const status = urlParams.get('status');
+
+// Check if the 'status' parameter is present and display the message accordingly
+if (status === 'success') {
+    // Display success message
+    alert('Successfully sent!');
+} else if (status === 'error') {
+    // Display error message
+    alert('Error sending the form. Please try again.');
+}
