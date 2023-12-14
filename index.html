@@ -1,6 +1,14 @@
     <!DOCTYPE html>
     <html lang="en">
     <head>
+        <!-- SEO -->
+        <meta name="description" content="Luuk Vesters is een tweedejaars Software Development student en richt zich momenteel op web development. Bekijk zijn projecten of neem contact met hem op!">
+    	<meta property="og:title" content="Luuk Vesters - Portfolio">
+    	<meta property="og:site_name" content="Luuk Vesters">
+    	<meta property="og:description" content="Luuk Vesters is een tweedejaars Software Development student en richt zich momenteel op web development. Bekijk zijn projecten of neem contact met hem op!">
+	    <!-- <meta property="og:image" content=""> -->
+    	<!-- <meta property="og:url" content=""> -->
+        <!-- standard -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
@@ -162,10 +170,13 @@
                 <section>
                     <h2>Contact</h2>
                     <div>
-                        <form class="form">
-                            <p class="contact-label" type="Naam:"><input class="contact-input" placeholder="Typ je naam hier" required></input></p>
-                            <p class="contact-label" type="Email:"><input class="contact-input" type="email" placeholder="De email waar ik je moet contacteren" required></input></p>
-                            <p class="contact-label" type="Bericht:"><input class="contact-input" type="text" placeholder="Bericht" required></input></p>
+                        <form class="form" action="https://formsubmit.co//luukvesters@gmail.com" method="POST">
+                            <input type="hidden" name="_template" value="box">
+                            <p class="contact-label" type="Naam:"><input name="Naam" class="contact-input" placeholder="Typ je naam hier" required></input></p>
+                            <p class="contact-label" type="Email:"><input name="Email" class="contact-input" type="email" placeholder="De email waar ik je moet contacteren" required></input></p>
+                            <p class="contact-label" type="Bericht:"><input name="Bericht" class="contact-input" type="text" placeholder="Bericht" required></input></p>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:3002/index.html">
                             <button type="submit">Verstuur</button>
                           </form>
                     </div>

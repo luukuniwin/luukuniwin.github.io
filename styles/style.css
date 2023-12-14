@@ -1,10 +1,12 @@
-
-/* 
-* 1. General
-* 2. Navigation
-* 3. Top part
-* 4. Mobile Menu
-*/
+/**************\
+*              / 
+*              /
+*              /
+*              /
+*              /
+*              /
+*              /
+***************/
 
 
 
@@ -41,14 +43,12 @@ body {
     }
 }
 
-
-
 /***************/
 /*  Navigation */
 /***************/
 nav {
     z-index: 10;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -82,8 +82,6 @@ nav {
     place-items: center;
 }
 
-
-
 /************/
 /* Top part */
 /************/
@@ -112,6 +110,7 @@ header {
     background: var(--body-background);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-shadow:0 0 400px #000;
 }
 
 section {
@@ -134,88 +133,10 @@ footer,#contact {
     margin-bottom: 10%;
 } 
 
-@media (max-width: 670px) {
-    header>section {
-        text-align: center;
-    }
-}
-
-/***************/
-/* Mobile Menu */
-/***************/
-
-.tab-nav-container {
-    z-index: 10;
-    background-color: rgb(5, 15, 23);
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    display: none;
-    justify-content: space-between;
-    padding: 30px;
-    width: 450px;
-    bottom: 0px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.tab {
-    background-color: rgb(32, 48, 60);
-    border-radius: 25px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 0 10px;
-    transition: background 0.4s linear;
-}
-
-.tab i {
-    font-size: 1.2em;
-}
-
-.tab p {
-    font-weight: bold;
-    overflow: hidden;
-    max-width: 0;
-}
-
-.tab-nav-container a {
-    color: white;
-    text-decoration: none;
-}
-
-.tab.active p {
-    margin-left: 10px;
-    max-width: 200px;
-    transition: max-width 0.4s linear;
-}
-
-@media (max-width: 500px) {
-    nav {
-        display: none;
-    }
-    .tab-nav-container {
-        display: flex;
-        padding: 20px;
-        width: 350px;
-    }
-
-    .tab {
-        padding: 0 20px;
-        margin: 0;
-    }
-
-    .tab i {
-        font-size: 1em;
-    }
-}
-
-
-
+/*************/
 /* Projecten */
+/*************/
+
 #projecten {
     margin-top: 2%;
     margin-bottom: 10%;
@@ -275,22 +196,9 @@ div>.btn:hover {
     background-color: #5a5a5a;
 }
 
-
-
-@media (max-width: 1190px) { 
-    .project-wrapper {
-        display: flex;
-        flex-direction: column;
-        max-width: 90%;
-    } 
-
-    .container p {
-        font-size: 1em;
-    }
-
-}
-
+/************/
 /* Over mij */
+/************/
 
 #over-mij-container {
     display: flex;
@@ -318,19 +226,6 @@ div>.btn:hover {
     align-items: center;
     width: 100%;
     margin: 3px 5px;
-}
-
-@media (max-width: 1200px) { 
-    #over-mij-container {
-        display: flex;
-        flex-direction: column;
-        max-width: 80%;
-    } 
-
-    #over-mij-container {
-        font-size: 1em;
-    }
-
 }
 
 /***********/
@@ -394,4 +289,113 @@ div>.btn:hover {
 .form>button:hover{
     background:#78788c;
     color:#fff
+}
+
+/* Footer */
+
+/***************/
+/* Mobile Menu */
+/***************/
+.tab-nav-container {
+    z-index: 10;
+    background-color: rgb(5, 15, 23);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: none;
+    justify-content: space-between;
+    padding: 30px;
+    width: 450px;
+    bottom: 0px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tab {
+    background-color: rgb(32, 48, 60);
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 10px;
+    transition: background 0.4s linear;
+}
+
+.tab i {
+    font-size: 1.2em;
+}
+
+.tab p {
+    font-weight: bold;
+    overflow: hidden;
+    max-width: 0;
+}
+
+.tab-nav-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.tab.active p {
+    margin-left: 10px;
+    max-width: 200px;
+    transition: max-width 0.4s linear;
+}
+
+/*********************/
+/* mobile responsive */
+/*********************/
+
+@media (max-width: 500px) {
+    header {
+        height: 90vh
+    }
+
+    nav {
+        display: none;
+    }
+
+    .tab-nav-container {
+        display: flex;
+        padding: 20px;
+        width: 350px;
+    }
+
+    .tab {
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    .tab i {
+        font-size: 1em;
+    }
+
+    header>section {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .project-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+    } 
+
+    .container p {
+        font-size: 1em;
+    }
+
+    #over-mij-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+    } 
+
+    #over-mij-container {
+        font-size: 1em;
+    }
 }

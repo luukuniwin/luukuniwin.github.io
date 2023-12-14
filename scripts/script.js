@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         var scrollPosition = window.scrollY;
 
-        if (scrollPosition > 50) {
+        if (scrollPosition > 150) {
             nav.classList.add('sticky-nav');
         } else {
             nav.classList.remove('sticky-nav');
@@ -29,16 +29,3 @@ tabs.forEach(clickedTab => {
         clickedTab.classList.add('active');
     });
 });
-
-
-
-$(".custom-carousel").owlCarousel({
-    autoWidth: true,
-    loop: true
-  });
-  $(document).ready(function () {
-    $(".custom-carousel .item").click(function () {
-      $(".custom-carousel .item").not($(this)).removeClass("active");
-      $(this).toggleClass("active");
-    });
-  });
