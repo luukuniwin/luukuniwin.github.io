@@ -181,42 +181,62 @@ div>.btn {
     display: inline-block;
     margin: 5px 3px;
     color: white;
-    padding: 8px 14px;
+    padding: 5px 8px;
     color: #fff; 
     border-radius: 5px; 
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
+    line-height:15px;
     font-weight: bold;
-    cursor:default;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .php {
     background: #4D588E;
+    cursor:default;
 }
 
 .sql {
     background-color: #f59453;
+    cursor:default;
 }
 
 .html {
     background-color: #e95d22;
+    cursor:default;
 }
 
 .css {
     background-color: #2079B6;
+    cursor:default;
 }
 
 .js {
     background-color: #dabe0b;
+    cursor:default;
 }
 
 .ps {
     background-color: #003f72;
+    cursor:default;
 }
 
 .sv {
     background-color: #10acf5;
+    cursor:default;
+}
+
+.link {
+    background-color: rgb(26, 60, 86);
+    float: right;
+    font-size: 16px;
+    margin-right: 2.5%;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 5px; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 /************/

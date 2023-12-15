@@ -41,3 +41,11 @@ if (status === 'success') {
     var msgElement = document.getElementById('contact-message');
     msgElement.innerHTML = "Bericht succesvol verzonden!"
 }
+
+
+  /* Demo purposes only */
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
