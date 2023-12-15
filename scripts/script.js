@@ -38,8 +38,6 @@ const status = urlParams.get('status');
 // Check if the 'status' parameter is present and display the message accordingly
 if (status === 'success') {
     // Display success message
-    alert('Successfully sent!');
-} else if (status === 'error') {
-    // Display error message
-    alert('Error sending the form. Please try again.');
+    var msgElement = document.getElementById('contact-message');
+    msgElement.innerHTML = "Bericht succesvol verzonden!"
 }
