@@ -13,6 +13,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        
         <script src="scripts/script.js" defer></script>
         <title>Luuk Vesters 🚀 | Home</title>
     </head>
@@ -49,7 +51,7 @@
             <nav>
                 <!-- desktop navigation -->
                 <div class="mobile-menu">
-                    <ul id="navLinks">
+                    <ul id="navLinks" class="animate__animated animate__fadeInDown">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#projecten">Projecten</a></li>
                         <li><a href="#over-mij">Over&nbsp;Mij</a></li>
@@ -59,8 +61,8 @@
             </nav>
             <section>
                 <div class="text-content">
-                    <h1>Portfolio <span>Luuk Vesters</span></h1>
-                    <p>
+                    <h1 data-sal="fade">Portfolio <span>Luuk Vesters</span></h1>
+                    <p class="animate__animated animate__fadeInUp">
                         Als tweedejaars student Software Development focus ik op het bouwen van innovatieve softwareoplossingen.<br>
                         Mijn brede technische vaardigheden omvatten verschillende programmeertalen en technologieën. <br>
                         Laten we samen de toekomst van softwareontwikkeling vormgeven! 🚀
@@ -68,7 +70,7 @@
                 </div>
                 <div class="image-container">
                 </div>
-                <a href="#over-mij" class="arrow-link">Meer over mij <i class="fas fa-arrow-down"></i></a>
+                <a href="#over-mij" class="arrow-link " >Meer over mij<i class="fas fa-arrow-down"></i></a>
             </section>
             
         </header>
@@ -84,21 +86,21 @@
                                     <img src="images/elementor-placeholder-image.webp" alt="Project Mockup">
                                 </a>
                             </div>
-                            <a  class="btn php">PHP</a><a class="btn sql">SQL</a><a href="#" class="link">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="btn php">PHP</a><a class="btn sql">SQL</a><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                         <div>
                             <h3>Project 2</h3>
                             <div class="container">
                                 <img src="images/elementor-placeholder-image.webp" alt="Project Mockup">
                             </div>
-                            <a class="btn html">HTML</a><a class="btn css">CSS</a><a class="btn js">Javascript</a>
+                            <a class="btn html">HTML</a><a class="btn css">CSS</a><a class="btn js">Javascript</a><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                         <div>
                             <h3>Project 3</h3>
                             <div class="container"> 
                                 <img src="images/elementor-placeholder-image.webp" alt="Project Mockup">
                             </div>
-                            <a class="btn php">PHP</a><a class="btn sql">SQL</a>
+                            <a class="btn php">PHP</a><a class="btn sql">SQL</a><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="project-wrapper">
@@ -107,21 +109,21 @@
                             <div class="container">
                                 <img src="images/elementor-placeholder-image.webp" alt="Project Mockup">
                             </div>
-                            <a  class="btn html">HTML</a><a class="btn css">CSS</a><a class="btn js">Javascript</a> 
+                            <a class="btn html">HTML</a><a class="btn css">CSS</a><a class="btn js">Javascript</a><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                         <div>
                             <h3>Project 5</h3>
                             <div class="container">
                                 <img src="images/elementor-placeholder-image.webp" alt="Project Mockup">
                             </div>
-                            <a  class="btn ps">Photoshop</a>
+                            <a  class="btn html">HTML</a><a class="btn css">CSS</a><a class="btn js">Javascript</a><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                         <div>
                             <h3>Project 6</h3>
                             <div class="container"> 
                                 <img src="images/elementor-placeholder-image.webp" alt="Project Mockup">
                             </div>
-                            <a class="btn sv">Sony Vegas 19</a>
+                            <a  class="btn html">HTML</a><a class="btn css">CSS</a><a class="btn js">Javascript</a><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </section>
@@ -131,7 +133,7 @@
                     <h2>Over Mij</h2>
                     <div id="over-mij-container">
                         <img src="images/placeholder.jpg" alt="Picture">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellendus quibusdam, laborum reprehenderit laboriosam itaque minus a perferendis, debitis ad accusantium placeat iusto. Exercitationem neque nemo veniam aperiam deleniti quod natus, corrupti molestias blanditiis nam qui, saepe eveniet, reprehenderit quae hic consequatur eum facilis? Dignissimos ea sequi iusto, ad laborum at, fuga aspernatur exercitationem ratione eaque, odit ipsum tenetur excepturi blanditiis commodi tempora illum nulla quae debitis reiciendis quos. Obcaecati!</p>
+                        <p></p>
                         <section id="skills">
                             <div>
                                 <label for="html-progress">HTML </label>
@@ -168,7 +170,7 @@
                         <form class="form" action="https://formsubmit.co/luukvesters@gmail.com" method="POST">
                             <p id="contact-message" style="color: rgb(59, 223, 59); text-align: center; font-weight: 900; font-family:'Lucida Sans';"></p>
                             <p class="contact-label" type="Naam:"><input name="Naam" class="contact-input" placeholder="Typ je naam hier" required></input></p>
-                            <p class="contact-label" type="Email:"><input name="Email" class="contact-input" type="email" placeholder="De email waar ik je moet contacteren" required></input></p>
+                            <p class="contact-label" type="Email:"><input name="Email" class="contact-input" type="email" placeholder="Je email" required></input></p>
                             <p class="contact-label" type="Bericht:"><input name="Bericht" class="contact-input" type="text" placeholder="Bericht" required></input></p>
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_next" value="https://luukuniwin.github.io/index.html?status=success#contact">

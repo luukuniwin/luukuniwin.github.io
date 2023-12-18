@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     var nav = document.querySelector('nav');
-
+    // Scroll event listener 
     window.addEventListener('scroll', function () {
         var scrollPosition = window.scrollY;
-
+        // If scrolled far enough nav receives class sticky-nav
         if (scrollPosition > 150) {
             nav.classList.add('sticky-nav');
         } else {
@@ -12,15 +12,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.documentElement.style.setProperty('--animate-duration', '2s');
+
+
 
 
 // Get all the tabs
 const tabs = document.querySelectorAll('.tab');
 
 tabs.forEach(clickedTab => {
-    // Add onClick event listener on each tab
+    // Add onclcik event listener on each tab
     clickedTab.addEventListener('click', () => {
-        // Remove the active class from all the tabs (this acts as a "hard" reset)
+        // Remove the active class from all the tabs
         tabs.forEach(tab => {
             tab.classList.remove('active');
         });
@@ -31,21 +34,12 @@ tabs.forEach(clickedTab => {
 });
 
 
-// Parse the URL to get the value of the 'status' parameter
+// Display success message for contact form
 const urlParams = new URLSearchParams(window.location.search);
 const status = urlParams.get('status');
-
-// Check if the 'status' parameter is present and display the message accordingly
+    
+// Display success message for contact form
 if (status === 'success') {
-    // Display success message
     var msgElement = document.getElementById('contact-message');
     msgElement.innerHTML = "Bericht succesvol verzonden!"
 }
-
-
-  /* Demo purposes only */
-  $(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
-    }
-  );
