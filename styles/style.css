@@ -341,7 +341,8 @@ footer {
     width: 100%;
     height: 20%;
     text-align: center;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.422);
+    
     position: absolute;
 }
 
