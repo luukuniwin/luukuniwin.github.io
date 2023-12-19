@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.documentElement.style.setProperty('--animate-duration', '2s');
+document.documentElement.style.setProperty('--animate-duration', '2.3s');
 
 
 
