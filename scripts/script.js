@@ -1,3 +1,24 @@
+// Login
+function togglePopup() {
+    var popup = document.getElementById('loginPopup');
+    popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
+}
+
+document.addEventListener('keydown', function (event) {
+    var popup = document.getElementById('loginPopup');
+    if (event.key === 'Escape' && popup.style.display === 'block') {
+        togglePopup();
+    }
+});
+
+function login() {
+    // Voeg hier de logica toe om het wachtwoord te controleren
+    // Voor nu sluiten we gewoon de popup
+    togglePopup();
+}
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     var nav = document.querySelector('nav');
     // Scroll event listener 
@@ -13,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.documentElement.style.setProperty('--animate-duration', '2.3s');
-
-
 
 
 // Get all the tabs
