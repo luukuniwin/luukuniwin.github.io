@@ -1,24 +1,30 @@
-// Login
-function togglePopup() {
-    var popup = document.getElementById('loginPopup');
-    popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
+// Slideshow
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-document.addEventListener('keydown', function (event) {
-    var popup = document.getElementById('loginPopup');
-    if (event.key === 'Escape' && popup.style.display === 'block') {
-        togglePopup();
-    }
-});
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-function login() {
-    // Voeg hier de logica toe om het wachtwoord te controleren
-    // Voor nu sluiten we gewoon de popup
-    togglePopup();
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
 }
 
 
-
+// Mobile sticky nav
 document.addEventListener('DOMContentLoaded', function () {
     var nav = document.querySelector('nav');
     // Scroll event listener 

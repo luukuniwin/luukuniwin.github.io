@@ -75,32 +75,63 @@
             
         </header>
         <main>
-            
-            <div class="popup" id="loginPopup">
-                <span onclick="togglePopup()" style="cursor: pointer; position: absolute; top: 10px; right: 15px; font-size: 20px;">&times;</span>
-                <form>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <br>
-                    <button type="button" onclick="login()">Login</button>
-                </form>
-            </div>
+        
             <div id="projecten">
                 <section>
                     <h2>Projecten</h2>
-                    <div class="login-container">
-                        <button class="login-btn" onclick="togglePopup()">Login</button>
-                    </div>
                     <div class="project-wrapper">
                         <div>
-                            <h3>Project 1</h3>
+                            <h3>UniWin Login/Dashboard</h3>
                             <div class="container">
                                 <a class="project-image-link">
-                                    <img src="images/elementor-placeholder-image.webp" alt="Project Mockup">
+                                    <!-- Slideshow container -->
+                                    <div class="slideshow-container">
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">1 / 6</div>
+                                            <img src="images/design1.png" >
+                                            <div class="text">Login Screen</div>
+                                        </div>
+                                    
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">2 / 6</div>
+                                            <img src="images/dashboard.png">
+                                            <div class="text">Dashboard</div>
+                                        </div>
+                                    
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">3 / 6</div>
+                                            <img src="images/scrolled-down-dashboard.png">
+                                            <div class="text">Dashboard</div>
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">4 / 6</div>
+                                            <img src="images/light-mode-dashboard.png">
+                                            <div class="text">Dashboard Light Mode</div>
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">5 / 6</div>
+                                            <img src="images/dashboard-clicked.png">
+                                            <div class="text">Dashboard info</div>
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">6 / 6</div>
+                                            <img src="images/Schermafbeelding 2024-01-19 091108.png">
+                                            <div class="text">Dashboard info</div>
+                                        </div>
+                                    
+                                        <!-- Next and previous buttons -->
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    </div>
                                 </a>
                             </div>
-                            <a class="btn php">PHP</a><a class="btn sql">SQL</a><a class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="btn html">HTML</a><a class="btn css">CSS</a><a class="btn js">Javascript</a><span><br>Ik heb veel geleerd tijdens het maken van dit project, zowel van javascript als het web<br> design gedeelte. Het project is een web dashboard voor een desktop app genaamd UniWin. <br>De connectie wordt via een websocket opgezet en op het dashboard gevisualiseerd. <br>Op de laatste slide zie je een screenshot van de desktop app en daarvoor mijn web visualisatie.</span>
+                            
                         </div>
+                        <!--
                         <div>
                             <h3>Project 2</h3>
                             <div class="container">
@@ -139,14 +170,15 @@
                             <a  class="btn html">HTML</a><a class="btn css">CSS</a><a class="btn js">Javascript</a><a class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
+                -->
                 </section>
             </div>
             <div id="over-mij">
                 <section>
                     <h2>Over Mij</h2>
                     <div id="over-mij-container">
-                        <img src="images/placeholder.jpg" alt="Picture">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nulla aut quaerat officiis corporis, fugiat quae officia tempora quo error inventore deserunt quas, laboriosam quibusdam alias dolores! Quo magni quasi unde id. Non rem culpa ut porro at nisi, provident earum, error sequi consequuntur similique nobis esse numquam itaque iusto architecto totam dignissimos, aut officia amet quo? Consequatur distinctio illo quasi nam? Esse voluptas voluptatem explicabo odio facere doloremque eaque quos aliquam ducimus, perferendis quo officia numquam accusantium. Ratione, nobis?</p>
+                        <!-- <img src="images/placeholder.jpg" alt="Picture"> -->
+                        <p>Ik ben 18 jaar en ben momenteel een tweedejaars software development student op het Koning Willem 1 college. Sinds dat ik klein was heb ik interesse in computers en hoe programma's en websites werken, ik begon met het maken van scripts/mods voor spelletjes toen ik 11 was omdat ik het interessant en leuk vond om te doen. In mijn vrije tijd vind ik het nog wel eens leuk om zo iets te doen, maar ook vind ik het leuk om videos en foto's te bewerken.</p>
                         <section id="skills">
                             <div>
                                 <label for="html-progress">HTML</label>
@@ -195,7 +227,6 @@
         </main>
         <footer>
             <p>Luuk Veters &copy;</p>
-            <a href="">Login</a>
             <br>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
